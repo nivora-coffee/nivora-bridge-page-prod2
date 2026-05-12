@@ -33,8 +33,11 @@
     // Fire PageView when page loads
     fbq('track', 'PageView');
 
-    // Fire ViewContent for this product page
-    fbq('track', 'ViewContent', nivoraProductPixelData);
+    // Fire ViewContent after 3 seconds on this product page
+    setTimeout(() => {
+      console.log("View Content Event Triggered Now")
+      fbq('track', 'ViewContent', nivoraProductPixelData);
+    }, 4000);
     </script>
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=803752739244989&ev=PageView&noscript=1"

@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nivora Coffee Company – Ground Coffee Powder | Medium Roast | 100% Arabica | 250g</title>
+  <meta name="description" content="Nivora Coffee Company Ground Coffee Powder. 100% Arabica, Medium Dark Roast. 250g. Buy on Amazon India." />
+
+  <!-- ============================================================
+      META PIXEL — Replace YOUR_PIXEL_ID with your actual Pixel ID
+      ============================================================ -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', 'YOUR_PIXEL_ID');   // ←←← REPLACE THIS with your real Pixel ID
+
+    // Fire PageView when page loads
+    fbq('track', 'PageView');
+  </script>
+
+  <noscript>
+    <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- ============================================================ -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ============================================================
+       CSS VARIABLES — Customize colors here
+       ============================================================ */
+    :root {
+      --espresso:    #1a0f0a;
+      --dark-roast:  #2c1810;
+      --rich-brown:  #4a2c1a;
+      --warm-amber:  #c47c2e;
+      --gold:        #d4922a;
+      --cream:       #f5ede0;
+      --parchment:   #fdf6ed;
+      --light-cream: #fff9f3;
+      --text-dark:   #1a0f0a;
+      --text-mid:    #5c3d2a;
+      --text-light:  #8a6a50;
+      --border:      rgba(196,124,46,0.18);
+      --shadow-warm: 0 8px 40px rgba(74,44,26,0.13);
+      --shadow-btn:  0 4px 24px rgba(196,124,46,0.35);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--parchment);
+      color: var(--text-dark);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* ============================================================
+       NAVBAR
+       ============================================================ */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--espresso);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      height: 56px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.4);
+    }
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    /* ============================================================
+       LOGO — Replace this SVG or use an <img> tag with your logo
+       ============================================================ */
+    .logo-mark {
+      width: 36px;
+      height: 36px;
+      background: var(--warm-amber);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--espresso);
+      flex-shrink: 0;
+    }
+
+    .brand-name {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--cream);
+      letter-spacing: -0.01em;
+      line-height: 1.1;
+    }
+
+    .brand-sub {
+      font-size: 9px;
+      font-weight: 300;
+      color: rgba(245,237,224,0.6);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .amazon-trust-tag {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 20px;
+      padding: 5px 12px;
+    }
+
+    .amazon-trust-tag svg { flex-shrink: 0; }
+
+    .amazon-trust-tag span {
+      font-size: 10px;
+      font-weight: 500;
+      color: rgba(245,237,224,0.75);
+      letter-spacing: 0.04em;
+    }
+
+    /* ============================================================
+       HERO / CAROUSEL
+       ============================================================ */
+    .hero {
+      background: linear-gradient(160deg, var(--espresso) 0%, var(--dark-roast) 55%, #3d2010 100%);
+      padding: 0 0 32px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c47c2e' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    /* Carousel */
+    .carousel-wrap {
+      position: relative;
+      width: 100%;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .carousel-track {
+      display: flex;
+      transition: transform 0.42s cubic-bezier(0.4,0,0.2,1);
+      will-change: transform;
+    }
+
+    .carousel-slide {
+      min-width: 100%;
+      padding: 28px 32px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* ============================================================
+       PRODUCT IMAGE PLACEHOLDERS
+       Replace these <div> placeholders with actual <img> tags
+       pointing to your product photos.
+       ============================================================ */
+    .product-img-placeholder {
+      width: 100%;
+      max-width: 320px;
+      aspect-ratio: 1 / 1;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.45), 0 0 0 1px rgba(196,124,46,0.18);
+    }
+
+    .product-img-placeholder img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      padding: 12px;   
+      background: white;
+      border-radius: 20px;
+    }
+
+    .img-placeholder-inner {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(145deg, #2c1810 0%, #1a0f0a 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      border-radius: 20px;
+    }
+
+    .img-ph-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: rgba(196,124,46,0.15);
+      border: 2px dashed rgba(196,124,46,0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .img-ph-label {
+      font-size: 12px;
+      color: rgba(196,124,46,0.55);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .carousel-dots {
+      display: flex;
+      justify-content: center;
+      gap: 7px;
+      padding: 14px 0 0;
+    }
+
+    .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: rgba(245,237,224,0.22);
+      cursor: pointer;
+      transition: all 0.25s;
+      border: none;
+    }
+
+    .dot.active {
+      background: var(--warm-amber);
+      width: 22px;
+      border-radius: 4px;
+    }
+
+    .carousel-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 36px;
+      height: 36px;
+      background: rgba(26,15,10,0.65);
+      border: 1px solid rgba(196,124,46,0.3);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 5;
+      transition: background 0.2s;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .carousel-nav:hover { background: rgba(196,124,46,0.25); }
+    .carousel-nav.prev { left: 12px; }
+    .carousel-nav.next { right: 12px; }
+
+    /* ============================================================
+       PRODUCT DETAILS
+       ============================================================ */
+    .product-section {
+      background: var(--light-cream);
+      padding: 28px 20px 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* Dropdown Arrow Rotation */
+    details[open] .dropdown-arrow {
+      transform: rotate(180deg);
+    }
+
+    /* Optional: Make it smoother and nicer */
+    .dropdown-arrow {
+      display: inline-block;
+      font-size: 18px;
+      color: var(--warm-amber);
+    }
+
+    .product-badge-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+
+    .badge {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 20px;
+    }
+
+    .badge-roast {
+      background: var(--warm-amber);
+      color: var(--espresso);
+    }
+
+    .badge-arabica {
+      background: rgba(74,44,26,0.1);
+      color: var(--rich-brown);
+      border: 1px solid rgba(74,44,26,0.18);
+    }
+
+    .badge-india {
+      background: rgba(19,136,8,0.1);
+      color: #145c0c;
+      border: 1px solid rgba(19,136,8,0.15);
+    }
+
+    .product-title {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 21px;
+      font-weight: 700;
+      line-height: 1.25;
+      letter-spacing: -0.015em;
+      color: var(--text-dark);
+      margin-bottom: 14px;
+    }
+
+    .rating-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .stars {
+      display: flex;
+      gap: 2px;
+    }
+
+    .star { color: #e6a817; font-size: 16px; }
+
+    .rating-num {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-dark);
+    }
+
+    .rating-count {
+      font-size: 13px;
+      color: var(--text-light);
+    }
+
+    .price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 6px;
+    }
+
+    .price-currency {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--text-dark);
+    }
+
+    .price-main {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 30px;
+      font-weight: 700;
+      color: var(--text-dark);
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+
+    .price-mrp {
+      font-size: 14px;
+      color: var(--text-light);
+      text-decoration: line-through;
+    }
+
+    .price-discount {
+      font-size: 13px;
+      font-weight: 600;
+      color: #1e7e34;
+      background: rgba(30,126,52,0.1);
+      padding: 2px 8px;
+      border-radius: 12px;
+    }
+
+    .price-note {
+      font-size: 12px;
+      color: var(--text-light);
+      margin-bottom: 20px;
+    }
+
+    /* Roast meter */
+    .roast-section {
+      background: rgba(74,44,26,0.05);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px 16px;
+      margin-bottom: 20px;
+    }
+
+    .roast-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 8px;
+    }
+
+    .roast-bar-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .roast-bar-bg {
+      flex: 1;
+      height: 8px;
+      background: linear-gradient(to right, #e8d5b0, #c47c2e, #4a2c1a);
+      border-radius: 4px;
+      position: relative;
+    }
+
+    .roast-bar-marker {
+      position: absolute;
+      top: 50%;
+      left: 70%;
+      transform: translate(-50%, -50%);
+      width: 16px;
+      height: 16px;
+      background: var(--espresso);
+      border: 2.5px solid var(--warm-amber);
+      border-radius: 50%;
+      box-shadow: 0 0 0 3px rgba(196,124,46,0.2);
+    }
+
+    .roast-end {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--text-light);
+      white-space: nowrap;
+    }
+
+    .roast-name {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--warm-amber);
+      margin-top: 6px;
+      text-align: center;
+    }
+
+    /* Brewing */
+    .brew-section { margin-bottom: 24px; }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 12px;
+    }
+
+    .brew-pills {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .brew-pill {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--rich-brown);
+    }
+
+    .brew-pill svg { flex-shrink: 0; }
+
+    /* Quick benefits */
+    .quick-benefits {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+
+    .qb-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 10px 12px;
+      background: var(--cream);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+
+    .qb-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--warm-amber);
+      margin-top: 5px;
+      flex-shrink: 0;
+    }
+
+    .qb-text {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-mid);
+      line-height: 1.4;
+    }
+
+    /* CTA inline */
+    .cta-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      background: linear-gradient(135deg, #f90 0%, #f5a623 100%);
+      color: var(--espresso);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      padding: 17px 24px;
+      border-radius: 14px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: var(--shadow-btn);
+      transition: filter 0.2s, transform 0.15s;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .cta-btn:hover { filter: brightness(1.05); transform: translateY(-1px); }
+    .cta-btn:active { transform: scale(0.98); }
+
+    .cta-sub {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      margin-top: 10px;
+    }
+
+    .cta-sub-item {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 11px;
+      color: var(--text-light);
+    }
+
+    /* ============================================================
+       TRUST BADGES
+       ============================================================ */
+    .trust-section {
+      background: var(--espresso);
+      padding: 24px 20px;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .trust-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 7px;
+      padding: 14px 8px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(196,124,46,0.15);
+      border-radius: 12px;
+    }
+
+    .trust-icon-wrap {
+      width: 38px;
+      height: 38px;
+      background: rgba(196,124,46,0.12);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .trust-text {
+      font-size: 10px;
+      font-weight: 600;
+      color: rgba(245,237,224,0.75);
+      text-align: center;
+      line-height: 1.35;
+      letter-spacing: 0.03em;
+    }
+
+    /* ============================================================
+       HIGHLIGHTS
+       ============================================================ */
+    .highlights-section {
+      padding: 32px 20px;
+      background: var(--light-cream);
+    }
+
+    .section-heading {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 6px;
+      letter-spacing: -0.02em;
+    }
+
+    .section-sub {
+      font-size: 13px;
+      color: var(--text-light);
+      margin-bottom: 20px;
+    }
+
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .highlight-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      box-shadow: 0 2px 12px rgba(74,44,26,0.06);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .highlight-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(74,44,26,0.1);
+    }
+
+    .highlight-icon {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, rgba(196,124,46,0.15), rgba(196,124,46,0.05));
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .highlight-name {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text-dark);
+      line-height: 1.35;
+      letter-spacing: -0.01em;
+    }
+
+    .highlight-desc {
+      font-size: 11px;
+      color: var(--text-light);
+      line-height: 1.5;
+    }
+
+    /* ============================================================
+       BREWING METHODS
+       ============================================================ */
+    .brewing-section {
+      padding: 32px 20px;
+      background: var(--cream);
+    }
+
+    .brewing-cards {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding-bottom: 6px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+
+    .brewing-cards::-webkit-scrollbar { display: none; }
+
+    .brew-card {
+      min-width: 100px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 2px 8px rgba(74,44,26,0.05);
+      flex-shrink: 0;
+    }
+
+    .brew-card-icon {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, var(--espresso), var(--dark-roast));
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .brew-card-name {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-dark);
+      text-align: center;
+      line-height: 1.3;
+    }
+
+    /* ============================================================
+       ABOUT / DESCRIPTION
+       ============================================================ */
+    .about-section {
+      padding: 32px 20px 32px 20px;   /* increased left padding */
+      margin-top: -25px;
+    }
+
+    .about-section .section-heading {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      margin-left: 4px;               /* ← Change this value as needed */
+    }
+
+    /* Optional: Also indent the content inside dropdown */
+    .about-section .desc-bullets {
+      margin-left: 8px;
+    }
+
+    .about-section .desc-bullets li {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 14.5px;
+      line-height: 1.45;
+    }
+
+    .about-section details summary {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-weight: 600;
+    }
+
+    .about-divider {
+      width: 48px;
+      height: 3px;
+      background: var(--warm-amber);
+      border-radius: 2px;
+      margin-bottom: 20px;
+    }
+
+    .spec-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      margin-top: 20px;
+    }
+
+    .spec-row {
+      display: flex;
+      align-items: center;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .spec-row:last-child { border-bottom: none; }
+    .spec-row:nth-child(even) { background: var(--cream); }
+
+    .spec-key {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-light);
+      width: 130px;
+      flex-shrink: 0;
+    }
+
+    .spec-val {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-dark);
+    }
+
+    .desc-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .desc-bullets li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 14px;
+      color: var(--text-mid);
+      line-height: 1.5;
+    }
+
+    .bullet-icon {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: rgba(196,124,46,0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* ============================================================
+       FOOTER
+       ============================================================ */
+    .footer {
+      background: var(--espresso);
+      padding: 28px 20px 96px; /* bottom padding for sticky CTA */
+      text-align: center;
+    }
+
+    .footer-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      color: var(--cream);
+      margin-bottom: 8px;
+    }
+
+    .footer-note {
+      font-size: 12px;
+      color: rgba(245,237,224,0.4);
+      line-height: 1.6;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 16px;
+    }
+
+    .footer-links a {
+      font-size: 11px;
+      color: rgba(245,237,224,0.4);
+      text-decoration: none;
+    }
+
+    /* ============================================================
+       STICKY MOBILE CTA
+       ============================================================ */
+    .sticky-cta {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--espresso);
+      padding: 12px 16px 16px;
+      box-shadow: 0 -4px 24px rgba(0,0,0,0.3);
+      border-top: 1px solid rgba(196,124,46,0.2);
+      z-index: 99;
+      transform: translateY(100%);
+      transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
+    }
+
+    .sticky-cta.visible { transform: translateY(0); }
+
+    .sticky-cta .cta-btn {
+      font-size: 15px;
+      padding: 14px 20px;
+      border-radius: 12px;
+    }
+
+    .sticky-cta-meta {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 8px;
+    }
+
+    .sticky-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 10px;
+      font-weight: 500;
+      color: rgba(245,237,224,0.5);
+    }
+
+    /* ============================================================
+       HELPERS
+       ============================================================ */
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 0;
+    }
+
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(196,124,46,0.1);
+      border: 1px solid rgba(196,124,46,0.2);
+      border-radius: 20px;
+      padding: 4px 12px;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--warm-amber);
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: 540px) {
+      .product-title { font-size: 24px; }
+      .highlights-grid { grid-template-columns: repeat(3, 1fr); }
+      .trust-grid { grid-template-columns: repeat(5, 1fr); }
+    }
+
+    @media (min-width: 768px) {
+      .sticky-cta { display: none; }
+      .footer { padding-bottom: 32px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <nav class="navbar">
+    <a href="#" class="navbar-brand">
+      <img src="images/nivora-logo.png" 
+        alt="Nivora Coffee Company" 
+        width="48" 
+        height="48" 
+        style="border-radius: 12px; object-fit: contain;">
+      
+      <div>
+        <div class="brand-name">Nivora Coffee</div>
+        <div class="brand-sub">Company</div>
+      </div>
+    </a>
+    <div class="amazon-trust-tag">
+      <img src="images/amazon-logo-2.png" alt="Amazon" width="18" height="18" style="filter: brightness(1.1);">
+      <span>Available on Amazon</span>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO CAROUSEL
+       ============================================================ -->
+  <section class="hero" id="top">
+  <div class="carousel-wrap">
+    <div class="carousel-track" id="carouselTrack">
+
+      <!-- SLIDE 1 -->
+      <div class="carousel-slide">
+        <div class="product-img-placeholder">
+          <img src="images/product-im-1.png" 
+               alt="Nivora Coffee Ground Coffee Powder 250g - Front View" 
+               class="product-image">
+        </div>
+      </div>
+
+      <!-- SLIDE 2 -->
+      <div class="carousel-slide">
+        <div class="product-img-placeholder">
+          <img src="images/product-im-2.png" 
+               alt="Nivora Coffee - Close up of grounds" 
+               class="product-image">
+        </div>
+      </div>
+
+      <!-- SLIDE 3 -->
+      <div class="carousel-slide">
+        <div class="product-img-placeholder">
+          <img src="images/product-im-3.png" 
+               alt="Nivora Coffee - Brewing" 
+               class="product-image">
+        </div>
+      </div>
+
+      <!-- SLIDE 4 -->
+      <div class="carousel-slide">
+        <div class="product-img-placeholder">
+          <img src="images/product-im-4.jpeg" 
+               alt="Nivora Coffee - Cup of coffee" 
+               class="product-image">
+        </div>
+      </div>
+
+    </div><!-- /carousel-track -->
+
+    <button class="carousel-nav prev" id="carouselPrev" aria-label="Previous">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+        <path d="M15 18l-6-6 6-6" stroke="#f5ede0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <button class="carousel-nav next" id="carouselNext" aria-label="Next">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+        <path d="M9 18l6-6-6-6" stroke="#f5ede0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </div><!-- /carousel-wrap -->
+
+  <div class="carousel-dots" id="carouselDots"></div>
+</section>
+
+  <!-- ============================================================
+       PRODUCT DETAILS
+       ============================================================ -->
+  <section class="product-section">
+
+    <div class="product-badge-row">
+      <span class="badge badge-roast">Medium Dark Roast</span>
+      <span class="badge badge-arabica">100% Arabica</span>
+      <span class="badge badge-india">🇮🇳 Made in India</span>
+    </div>
+
+    <h1 class="product-title">
+      Ground Coffee Powder | 100% Arabica | 250g
+    </h1>
+
+    <!-- Price -->
+    <div class="price-row">
+      <span class="price-currency">₹</span>
+      <span class="price-main">430</span>
+      <span class="price-mrp">MRP ₹450</span>
+      <span class="price-discount">-4%</span>
+    </div>
+    <p class="price-note">Inclusive of all taxes · 250g pack</p>
+
+    <!-- Roast meter -->
+    <div class="roast-section">
+      <div class="roast-label">Roast Level</div>
+      <div class="roast-bar-wrap">
+        <span class="roast-end">Light</span>
+        <div class="roast-bar-bg">
+          <div class="roast-bar-marker"></div>
+        </div>
+        <span class="roast-end">Dark</span>
+      </div>
+      <div class="roast-name">Medium Dark</div>
+    </div>
+
+    <!-- Brewing methods -->
+    <div class="brew-section">
+      <div class="section-label">Works with</div>
+      <div class="brew-pills">
+        <div class="brew-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M8 2v3M12 2v3M16 2v3" stroke="#4a2c1a" stroke-width="1.8" stroke-linecap="round"/><path d="M3 7h18v10a4 4 0 01-4 4H7a4 4 0 01-4-4V7z" stroke="#4a2c1a" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          French Press
+        </div>
+        <div class="brew-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M6 20h12M9 14l-3-8h12l-3 8" stroke="#4a2c1a" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 6V4M9 20v-6h6v6" stroke="#4a2c1a" stroke-width="1.8" stroke-linecap="round"/></svg>
+          Moka Pot
+        </div>
+        <div class="brew-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="5" y="10" width="14" height="11" rx="2" stroke="#4a2c1a" stroke-width="1.8"/><path d="M8 10V7a4 4 0 018 0v3" stroke="#4a2c1a" stroke-width="1.8" stroke-linecap="round"/></svg>
+          Espresso
+        </div>
+        <div class="brew-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M6 3h12v2a6 6 0 01-6 6 6 6 0 01-6-6V3zM6 19h12M9 11v8M15 11v8" stroke="#4a2c1a" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          Drip Coffee
+        </div>
+        <!-- NEW: Channi / Strainer -->
+        <div class="brew-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 5h14M8 5v10a2 2 0 002 2h4a2 2 0 002-2V5" stroke="#4a2c1a" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="18" r="2" stroke="#4a2c1a" stroke-width="1.8"/></svg>
+          Channi / Strainer
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick benefits -->
+    <div class="quick-benefits">
+      <div class="qb-item"><div class="qb-dot"></div><span class="qb-text">No Added Sugar</span></div>
+      <div class="qb-item"><div class="qb-dot"></div><span class="qb-text">No Preservatives</span></div>
+      <div class="qb-item"><div class="qb-dot"></div><span class="qb-text">Freshly Roasted</span></div>
+    </div>
+
+    <!-- Inline CTA -->
+    <!-- ============================================================
+         AMAZON CTA BUTTON
+         Replace YOUR_AMAZON_ATTRIBUTION_LINK with your actual link
+         ============================================================ -->
+    <a href="https://www.amazon.in/Nivora-Coffee-Company-Ground-Arabica/dp/B0GSW8378M?crid=17K8BB8BMP1S2&dib=eyJ2IjoiMSJ9.BXQx5ONTHcvd4-WaUI1feKxoRySeZP-vatEC0VLENrDJ7jSc4l6p83SvvAc0b_YNLWQAuCZoJpa4OwvvZVJnphhZaDMh84v3_rows3WFqJfr4XKXhzEZK5gxMo65LQBKZ6wcmZcLHdbsNQ21dExC95zMNm4ItWT1Wvv9hszzgjQ5nyYh60Ke-7Rif94Os3Ko5tEUqZvrJuTRD-_bDT9w-hhOuUPbrIRvWsydEp8eP_A.aDCdTNQ0xymKga16uTVSPkScXBhN4nqDnAqZ_hf7dk8&dib_tag=se&keywords=nivora+coffee+company&nsdOptOutParam=true&qid=1778152753&sprefix=Nivora+Coffee%2Caps%2C651&sr=8-6&linkCode=ll2&tag=nivoracoffeec-21&linkId=fee470427075481a40b44d8ee7b41ed6&ref_=as_li_ss_tl"
+      id="ctaBtnInline"
+      class="cta-btn"
+      onclick="handleBuyClick(event)">
+      
+      <!-- Circular & Larger Amazon Logo -->
+      <img src="images/amazon-logo-2.png" 
+            alt="Amazon" 
+            width="32" 
+            height="32" 
+            style="border-radius: 50%; filter: brightness(1.1);">
+      
+      Buy on Amazon
+    </a>
+    <div class="cta-sub">
+      <div class="cta-sub-item">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7v5c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" fill="#1e7e34"/></svg>
+        Secure Checkout
+      </div>
+      <div class="cta-sub-item">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="#8a6a50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Fast Delivery
+      </div>
+      <div class="cta-sub-item">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#00a8e1" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#00a8e1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Prime Eligible
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TRUST BADGES
+       ============================================================ -->
+  <section class="trust-section">
+    <div class="trust-grid">
+
+      <div class="trust-item">
+        <div class="trust-icon-wrap">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="1" y="3" width="15" height="13" rx="2" stroke="#c47c2e" stroke-width="1.8"/><path d="M16 8h4l3 5v3h-7V8z" stroke="#c47c2e" stroke-width="1.8" stroke-linejoin="round"/><circle cx="5.5" cy="18.5" r="2.5" stroke="#c47c2e" stroke-width="1.8"/><circle cx="18.5" cy="18.5" r="2.5" stroke="#c47c2e" stroke-width="1.8"/></svg>
+        </div>
+        <span class="trust-text">Amazon Delivered</span>
+      </div>
+
+      <div class="trust-item">
+        <div class="trust-icon-wrap">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7v5c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" stroke="#c47c2e" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="#c47c2e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <span class="trust-text">Secure Transaction</span>
+      </div>
+
+      <div class="trust-item">
+        <div class="trust-icon-wrap">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#c47c2e" stroke-width="1.8"/><path d="M12 8v4l3 2" stroke="#c47c2e" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <span class="trust-text">Freshly Roasted</span>
+      </div>
+
+      <div class="trust-item">
+        <div class="trust-icon-wrap">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#c47c2e" stroke-width="1.8"/><path d="M7 12h10M12 7v10" stroke="#c47c2e" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <span class="trust-text">Made in India</span>
+      </div>
+
+      <div class="trust-item">
+        <div class="trust-icon-wrap">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z" stroke="#c47c2e" stroke-width="1.8"/><path d="M12 8v4M12 16h.01" stroke="#c47c2e" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <span class="trust-text">No Preservatives</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+      HIGHLIGHTS — No Emojis/Icons
+      ============================================================ -->
+  <section class="highlights-section">
+    <div class="section-tag">
+      Why Choose Nivora
+    </div>
+    <h2 class="section-heading">Product Highlights</h2>
+    <p class="section-sub">Crafted for discerning coffee lovers</p>
+
+    <div class="highlights-grid">
+
+      <div class="highlight-card">
+        <div class="highlight-name">100% Arabica</div>
+        <div class="highlight-desc">Pure single-origin Arabica beans — no filler, no compromise.</div>
+      </div>
+
+      <div class="highlight-card">
+        <div class="highlight-name">Medium Dark Roast</div>
+        <div class="highlight-desc">Perfect balance of body, bitterness, and smooth finish.</div>
+      </div>
+
+      <div class="highlight-card">
+        <div class="highlight-name">No Added Sugar</div>
+        <div class="highlight-desc">Clean label — just pure coffee the way nature intended.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+      ABOUT / DESCRIPTION — Dropdown + Separate Table
+      ============================================================ -->
+  <section class="about-section">
+    <div class="section-tag">Details</div>
+    <h2 class="section-heading">About This Coffee</h2>
+    <div class="about-divider"></div>
+
+    <!-- Dropdown -->
+    <details class="desc-details" style="margin-top: 16px; margin-bottom: 24px;">
+      <summary style="cursor: pointer; font-weight: 600; padding: 14px 0; 
+                    border-top: 1px solid var(--border); 
+                    display: flex; align-items: center; gap: 8px; list-style: none;">
+      
+      <span>Product Description & Details</span>
+      
+      <!-- Downward Arrow -->
+      <span class="dropdown-arrow" style="margin-left: auto; font-size: 10px; 
+                transition: transform 0.3s ease; line-height: 1;">▼</span>
+    </summary>
+      
+      <ul class="desc-bullets" style="margin-top: 16px; padding-bottom: 12px;">
+        <li>
+          <div class="bullet-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#c47c2e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          100% Arabica Ground Coffee sourced from premium estates
+        </li>
+        <li>
+          <div class="bullet-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#c47c2e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          Medium Dark Roast — full body with a smooth, slightly sweet finish
+        </li>
+        <li>
+          <div class="bullet-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#c47c2e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          Freshly ground close to dispatch to lock in peak flavour
+        </li>
+        <li>
+          <div class="bullet-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#c47c2e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          No added sugar, no artificial preservatives — clean and natural
+        </li>
+        <li>
+          <div class="bullet-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#c47c2e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          No fancy brewing needed — works great even with a basic channi or strainer
+        </li>
+        <li>
+          <div class="bullet-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#c47c2e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          Proudly Made in India — supporting local craft coffee
+        </li>
+        <li>
+          <div class="bullet-icon" style="background:#15803d;">
+            <span style="color:white; font-size:13px; font-weight:bold;">V</span>
+          </div>
+          Vegetarian product — suitable for all dietary preferences
+        </li>
+      </ul>
+    </details>
+
+    <!-- Separate Specifications Table -->
+    <h3 style="font-size: 15px; margin-bottom: 12px; color: var(--text-dark);">Specifications</h3>
+    <div class="spec-list">
+      <div class="spec-row"><span class="spec-key">Net Weight</span><span class="spec-val">250g</span></div>
+      <div class="spec-row"><span class="spec-key">Roast Level</span><span class="spec-val">Medium Dark Roast</span></div>
+      <div class="spec-row"><span class="spec-key">Coffee Type</span><span class="spec-val">Ground Coffee Powder</span></div>
+      <div class="spec-row"><span class="spec-key">Ingredients</span><span class="spec-val">100% Roasted and Ground Arabica Coffee Beans</span></div>
+      <div class="spec-row"><span class="spec-key">Dietary</span><span class="spec-val">✅ Vegetarian</span></div>
+      <div class="spec-row"><span class="spec-key">Origin</span><span class="spec-val">Made in India</span></div>
+      <div class="spec-row"><span class="spec-key">Sold by</span><span class="spec-val">Amazon.in (Secure Checkout)</span></div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER CTA
+       ============================================================ -->
+  <section style="background: linear-gradient(135deg, var(--espresso) 0%, #2c1810 100%); padding: 16px 20px; text-align: center;">
+    <div style="font-family:'Playfair Display',serif; font-size:20px; color:var(--cream); margin-bottom:8px;">Ready to brew something great?</div>
+    <div style="font-size:13px; color:rgba(245,237,224,0.5); margin-bottom:5px;">Order now and get it delivered to your door</div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="footer-brand">Nivora Coffee Company</div>
+    <div class="footer-note">
+      Premium Ground Coffee · 100% Arabica · Made in India<br>
+      © 2024 Nivora Coffee Company. All rights reserved.
+    </div>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Contact Us</a>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       STICKY CTA — mobile only
+       ============================================================ -->
+  <div class="sticky-cta" id="stickyCta">
+    <!-- Replace YOUR_AMAZON_ATTRIBUTION_LINK below -->
+    <a href="https://www.amazon.in/Nivora-Coffee-Company-Ground-Arabica/dp/B0GSW8378M?crid=17K8BB8BMP1S2&dib=eyJ2IjoiMSJ9.BXQx5ONTHcvd4-WaUI1feKxoRySeZP-vatEC0VLENrDJ7jSc4l6p83SvvAc0b_YNLWQAuCZoJpa4OwvvZVJnphhZaDMh84v3_rows3WFqJfr4XKXhzEZK5gxMo65LQBKZ6wcmZcLHdbsNQ21dExC95zMNm4ItWT1Wvv9hszzgjQ5nyYh60Ke-7Rif94Os3Ko5tEUqZvrJuTRD-_bDT9w-hhOuUPbrIRvWsydEp8eP_A.aDCdTNQ0xymKga16uTVSPkScXBhN4nqDnAqZ_hf7dk8&dib_tag=se&keywords=nivora+coffee+company&nsdOptOutParam=true&qid=1778152753&sprefix=Nivora+Coffee%2Caps%2C651&sr=8-6&linkCode=ll2&tag=nivoracoffeec-21&linkId=fee470427075481a40b44d8ee7b41ed6&ref_=as_li_ss_tl"
+       id="ctaBtnSticky"
+       class="cta-btn"
+       onclick="handleBuyClick(event)">
+
+      <!-- Circular & Larger Amazon Logo -->
+      <img src="images/amazon-logo-2.png" 
+            alt="Amazon" 
+            width="30" 
+            height="30" 
+            style="border-radius: 50%; filter: brightness(1.1);">
+
+      Buy on Amazon · ₹430
+    </a>
+    <div class="sticky-cta-meta">
+      <div class="sticky-meta-item">🔒 Secure Amazon Checkout</div>
+      <div class="sticky-meta-item">🚚 Fast Delivery</div>
+      <div class="sticky-meta-item">⚡ Prime Eligible</div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       JAVASCRIPT
+       ============================================================ -->
+  <script>
+    // ============================================================
+    // CAROUSEL
+    // ============================================================
+    const track      = document.getElementById('carouselTrack');
+    const dotsWrap   = document.getElementById('carouselDots');
+    const prevBtn    = document.getElementById('carouselPrev');
+    const nextBtn    = document.getElementById('carouselNext');
+    const slides     = track.querySelectorAll('.carousel-slide');
+    let current      = 0;
+    let autoTimer;
+
+    // Build dots
+    slides.forEach((_, i) => {
+      const d = document.createElement('button');
+      d.className = 'dot' + (i === 0 ? ' active' : '');
+      d.setAttribute('aria-label', `Photo ${i+1}`);
+      d.addEventListener('click', () => goTo(i));
+      dotsWrap.appendChild(d);
+    });
+
+    function goTo(idx) {
+      current = (idx + slides.length) % slides.length;
+      track.style.transform = `translateX(-${current * 100}%)`;
+      dotsWrap.querySelectorAll('.dot').forEach((d, i) =>
+        d.classList.toggle('active', i === current));
+    }
+
+    prevBtn.addEventListener('click', () => { goTo(current - 1); resetAuto(); });
+    nextBtn.addEventListener('click', () => { goTo(current + 1); resetAuto(); });
+
+    function startAuto() { autoTimer = setInterval(() => goTo(current + 1), 3800); }
+    function resetAuto()  { clearInterval(autoTimer); startAuto(); }
+    startAuto();
+
+    // Touch swipe
+    let tx = 0;
+    track.addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, { passive: true });
+    track.addEventListener('touchend', e => {
+      const dx = e.changedTouches[0].clientX - tx;
+      if (Math.abs(dx) > 40) { goTo(dx < 0 ? current + 1 : current - 1); resetAuto(); }
+    }, { passive: true });
+
+    // ============================================================
+    // STICKY CTA — show after scrolling past hero
+    // ============================================================
+    const stickyCta = document.getElementById('stickyCta');
+    const hero      = document.querySelector('.hero');
+
+    function onScroll() {
+      const heroBottom = hero.getBoundingClientRect().bottom;
+      stickyCta.classList.toggle('visible', heroBottom < 0);
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    // ============================================================
+    // META PIXEL — Buy on Amazon click handler
+    // Fires InitiateCheckout THEN redirects
+    // ============================================================
+    function handleBuyClick(e) {
+      e.preventDefault();
+      const href = e.currentTarget.href;
+
+      // Fire Meta Pixel Event
+      if (typeof fbq !== 'undefined') {
+        fbq('track', 'InitiateCheckout', {
+          currency: 'INR',
+          value: 430.00
+        });
+        console.log('%c🔥 Meta Pixel: InitiateCheckout fired (₹430)', 'color:#8B5F3B; font-weight:bold');
+      }
+
+      // Small delay to let pixel fire
+      setTimeout(() => {
+        window.location.href = href;
+      }, 300);
+    }
+  </script>
+
+</body>
+</html>

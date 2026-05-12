@@ -21,17 +21,32 @@
     'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '803752739244989');
 
+    function getNivoraProductQueryParam() {
+      const params = new URLSearchParams(window.location.search);
+      const product = params.get('product');
+
+      return product ? { product } : {};
+    }
+
+    const nivoraProductQueryParam = getNivoraProductQueryParam();
+    const nivoraBasePixelData = {
+      page_url: window.location.href,
+      page_title: document.title,
+      ...nivoraProductQueryParam
+    };
+
     const nivoraProductPixelData = {
       content_ids: ['B0GRHKL9YG'],
       content_name: 'Nivora Coffee Company Filter Coffee Powder',
       content_category: 'Coffee',
       content_type: 'product',
       currency: 'INR',
-      value: 370.00
+      value: 370.00,
+      ...nivoraBasePixelData
     };
 
     // Fire PageView when page loads
-    fbq('track', 'PageView');
+    fbq('track', 'PageView', nivoraBasePixelData);
 
     // Fire ViewContent after 3 seconds on this product page
     setTimeout(() => {

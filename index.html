@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nivora Coffee Company – Filter Coffee Powder | Authentic South Indian Blend | 250g</title>
+  <title>Nivora Coffee Company – Filter Coffee Powder | Authentic South Indian Blend | 80% Coffee + 20% Chicory | 250g</title>
   <meta name="description" content="Nivora Coffee Company Authentic South Indian Filter Coffee Powder. Freshly ground, no sugar, no preservatives. 250g jar. Buy on Amazon India." />
 
   <!-- ============================================================
@@ -21,8 +21,20 @@
 
     fbq('init', 'YOUR_PIXEL_ID');   // ←←← REPLACE THIS with your real Pixel ID
 
+    const nivoraProductPixelData = {
+      content_ids: ['B0GRHKL9YG'],
+      content_name: 'Nivora Coffee Company Filter Coffee Powder',
+      content_category: 'Coffee',
+      content_type: 'product',
+      currency: 'INR',
+      value: 370.00
+    };
+
     // Fire PageView when page loads
     fbq('track', 'PageView');
+
+    // Fire ViewContent for this product page
+    fbq('track', 'ViewContent', nivoraProductPixelData);
   </script>
 
   <noscript>
@@ -1175,7 +1187,7 @@
 
     <div class="product-badge-row">
       <span class="badge badge-roast">Authentic South Indian</span>
-      <span class="badge badge-arabica">Coffee + Chicory Blend</span>
+      <span class="badge badge-arabica">Coffee(80%) + Chicory(20%) Blend</span>
       <span class="badge badge-india">🇮🇳 Made in India</span>
     </div>
 
@@ -1241,7 +1253,7 @@
          AMAZON CTA BUTTON
          Replace YOUR_AMAZON_ATTRIBUTION_LINK with your actual link
          ============================================================ -->
-    <a href="https://www.amazon.in/Nivora-Coffee-Company-Ground-Arabica/dp/B0GSW8378M?crid=17K8BB8BMP1S2&dib=eyJ2IjoiMSJ9.BXQx5ONTHcvd4-WaUI1feKxoRySeZP-vatEC0VLENrDJ7jSc4l6p83SvvAc0b_YNLWQAuCZoJpa4OwvvZVJnphhZaDMh84v3_rows3WFqJfr4XKXhzEZK5gxMo65LQBKZ6wcmZcLHdbsNQ21dExC95zMNm4ItWT1Wvv9hszzgjQ5nyYh60Ke-7Rif94Os3Ko5tEUqZvrJuTRD-_bDT9w-hhOuUPbrIRvWsydEp8eP_A.aDCdTNQ0xymKga16uTVSPkScXBhN4nqDnAqZ_hf7dk8&dib_tag=se&keywords=nivora+coffee+company&nsdOptOutParam=true&qid=1778152753&sprefix=Nivora+Coffee%2Caps%2C651&sr=8-6&linkCode=ll2&tag=nivoracoffeec-21&linkId=fee470427075481a40b44d8ee7b41ed6&ref_=as_li_ss_tl"
+    <a href="https://www.amazon.in/Nivora-Coffee-Company-Authentic-Premium/dp/B0GRHKL9YG?crid=17K8BB8BMP1S2&dib=eyJ2IjoiMSJ9.BXQx5ONTHcvd4-WaUI1feKxoRySeZP-vatEC0VLENrDJ7jSc4l6p83SvvAc0b_YNLWQAuCZoJpa4OwvvZVJnphhZaDMh84v3_rows3WFqJfr4XKXhzEZK5gxMo65LQBKZ6wcmZcLHdbsNQ21dExC95zMNm4ItWT1Wvv9hszzgjQ5nyYh60Ke-7Rif94Os3Ko5tEUqZvrJuTRD-_bDT9w-hhOuUPbrIRvWsydEp8eP_A.aDCdTNQ0xymKga16uTVSPkScXBhN4nqDnAqZ_hf7dk8&dib_tag=se&keywords=nivora+coffee+company&nsdOptOutParam=true&qid=1778152753&sprefix=Nivora+Coffee%2Caps%2C651&sr=8-5&linkCode=ll2&tag=nivoracoffeec-21&linkId=a70e45b65d66063d7e8cef71f8bed762&ref_=as_li_ss_tl"
       id="ctaBtnInline"
       class="cta-btn"
       onclick="handleBuyClick(event)">
@@ -1406,7 +1418,7 @@
       <div class="spec-row"><span class="spec-key">Net Weight</span><span class="spec-val">250g</span></div>
       <div class="spec-row"><span class="spec-key">Roast Level</span><span class="spec-val">Medium Dark Roast</span></div>
       <div class="spec-row"><span class="spec-key">Coffee Type</span><span class="spec-val">Filter Coffee Powder</span></div>
-      <div class="spec-row"><span class="spec-key">Ingredients</span><span class="spec-val">Coffee, Chicory</span></div>
+      <div class="spec-row"><span class="spec-key">Ingredients</span><span class="spec-val">Coffee(80%), Chicory(20%)</span></div>
       <div class="spec-row"><span class="spec-key">Blend</span><span class="spec-val">South Indian Filter Coffee Blend</span></div>
       <div class="spec-row"><span class="spec-key">Dietary</span><span class="spec-val">✅ Vegetarian</span></div>
       <div class="spec-row"><span class="spec-key">Origin</span><span class="spec-val">Made in India</span></div>
@@ -1568,11 +1580,14 @@
 
       // Fire Meta Pixel Event
       if (typeof fbq !== 'undefined') {
-        fbq('track', 'InitiateCheckout', {
-          currency: 'INR',
-          value: 430.00
-        });
-        console.log('%c🔥 Meta Pixel: InitiateCheckout fired (₹430)', 'color:#8B5F3B; font-weight:bold');
+        const checkoutPixelData = {
+          ...nivoraProductPixelData,
+          button_id: e.currentTarget.id || 'amazon_cta',
+          destination: 'Amazon'
+        };
+
+        fbq('track', 'InitiateCheckout', checkoutPixelData);
+        console.log('%c🔥 Meta Pixel: InitiateCheckout fired (₹370)', 'color:#8B5F3B; font-weight:bold');
       }
 
       // Small delay to let pixel fire

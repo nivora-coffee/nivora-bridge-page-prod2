@@ -21,18 +21,24 @@
     'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '803752739244989');
 
-    function getNivoraProductQueryParam() {
+    function getNivoraUtmParams() {
+      const utmParams = {};
       const params = new URLSearchParams(window.location.search);
-      const product = params.get('product');
+      const utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content'];
 
-      return product ? { product } : {};
+      utmKeys.forEach((key) => {
+        const value = params.get(key);
+        if (value) utmParams[key] = value;
+      });
+
+      return utmParams;
     }
 
-    const nivoraProductQueryParam = getNivoraProductQueryParam();
+    const nivoraUtmParams = getNivoraUtmParams();
     const nivoraBasePixelData = {
       page_url: window.location.href,
       page_title: document.title,
-      ...nivoraProductQueryParam
+      ...nivoraUtmParams
     };
 
     const nivoraProductPixelData = {

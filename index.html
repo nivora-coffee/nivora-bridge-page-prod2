@@ -9,17 +9,17 @@
   <!-- ============================================================
       META PIXEL — Replace YOUR_PIXEL_ID with your actual Pixel ID
       ============================================================ -->
-  <script>
+    <!-- Meta Pixel Code -->
+    <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
     if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
     n.queue=[];t=b.createElement(e);t.async=!0;
     t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-
-    fbq('init', 'YOUR_PIXEL_ID');   // ←←← REPLACE THIS with your real Pixel ID
+    fbq('init', '803752739244989');
 
     const nivoraProductPixelData = {
       content_ids: ['B0GRHKL9YG'],
@@ -34,13 +34,12 @@
     fbq('track', 'PageView');
 
     // Fire ViewContent for this product page
-    fbq('track', 'ViewContent', nivoraProductPixelData);
-  </script>
-
-  <noscript>
-    <img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/>
-  </noscript>
+    //fbq('track', 'ViewContent', nivoraProductPixelData);
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=803752739244989&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
   <!-- ============================================================ -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -1455,7 +1454,7 @@
        ============================================================ -->
   <div class="sticky-cta" id="stickyCta">
     <!-- Replace YOUR_AMAZON_ATTRIBUTION_LINK below -->
-    <a href="https://www.amazon.in/Nivora-Coffee-Company-Ground-Arabica/dp/B0GSW8378M?crid=17K8BB8BMP1S2&dib=eyJ2IjoiMSJ9.BXQx5ONTHcvd4-WaUI1feKxoRySeZP-vatEC0VLENrDJ7jSc4l6p83SvvAc0b_YNLWQAuCZoJpa4OwvvZVJnphhZaDMh84v3_rows3WFqJfr4XKXhzEZK5gxMo65LQBKZ6wcmZcLHdbsNQ21dExC95zMNm4ItWT1Wvv9hszzgjQ5nyYh60Ke-7Rif94Os3Ko5tEUqZvrJuTRD-_bDT9w-hhOuUPbrIRvWsydEp8eP_A.aDCdTNQ0xymKga16uTVSPkScXBhN4nqDnAqZ_hf7dk8&dib_tag=se&keywords=nivora+coffee+company&nsdOptOutParam=true&qid=1778152753&sprefix=Nivora+Coffee%2Caps%2C651&sr=8-6&linkCode=ll2&tag=nivoracoffeec-21&linkId=fee470427075481a40b44d8ee7b41ed6&ref_=as_li_ss_tl"
+    <a href="https://www.amazon.in/Nivora-Coffee-Company-Authentic-Premium/dp/B0GRHKL9YG?crid=17K8BB8BMP1S2&dib=eyJ2IjoiMSJ9.BXQx5ONTHcvd4-WaUI1feKxoRySeZP-vatEC0VLENrDJ7jSc4l6p83SvvAc0b_YNLWQAuCZoJpa4OwvvZVJnphhZaDMh84v3_rows3WFqJfr4XKXhzEZK5gxMo65LQBKZ6wcmZcLHdbsNQ21dExC95zMNm4ItWT1Wvv9hszzgjQ5nyYh60Ke-7Rif94Os3Ko5tEUqZvrJuTRD-_bDT9w-hhOuUPbrIRvWsydEp8eP_A.aDCdTNQ0xymKga16uTVSPkScXBhN4nqDnAqZ_hf7dk8&dib_tag=se&keywords=nivora+coffee+company&nsdOptOutParam=true&qid=1778152753&sprefix=Nivora+Coffee%2Caps%2C651&sr=8-5&linkCode=ll2&tag=nivoracoffeec-21&linkId=a70e45b65d66063d7e8cef71f8bed762&ref_=as_li_ss_tl"
        id="ctaBtnSticky"
        class="cta-btn"
        onclick="handleBuyClick(event)">
@@ -1689,3 +1688,21 @@
 
 </body>
 </html>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '803752739244989');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=803752739244989&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->

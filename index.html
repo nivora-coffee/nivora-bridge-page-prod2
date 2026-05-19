@@ -10,60 +10,99 @@
       META PIXEL — Replace YOUR_PIXEL_ID with your actual Pixel ID
       ============================================================ -->
     <!-- Meta Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '803752739244989');
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
 
-    function getNivoraUtmParams() {
-      const utmParams = {};
-      const params = new URLSearchParams(window.location.search);
-      const utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content'];
+fbq('init', '803752739244989');
 
-      utmKeys.forEach((key) => {
-        const value = params.get(key);
-        if (value) utmParams[key] = value;
-      });
+/* ==========================================================
+   EVENT ID GENERATOR
+   Creates a unique ID for every event.
+========================================================== */
+function generateMetaEventId(eventName) {
+  return eventName + '_' + Date.now() + '_' +
+         Math.random().toString(36).substring(2, 10);
+}
 
-      return utmParams;
+/* ==========================================================
+   UTM PARAMS
+========================================================== */
+function getNivoraUtmParams() {
+  const utmParams = {};
+  const params = new URLSearchParams(window.location.search);
+  const utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content'];
+
+  utmKeys.forEach((key) => {
+    const value = params.get(key);
+    if (value) utmParams[key] = value;
+  });
+
+  return utmParams;
+}
+
+const nivoraUtmParams = getNivoraUtmParams();
+
+const nivoraBasePixelData = {
+  page_url: window.location.href,
+  page_title: document.title,
+  ...nivoraUtmParams
+};
+
+const nivoraProductPixelData = {
+  content_ids: ['B0GRHKL9YG'],
+  content_name: 'Nivora Coffee Company Filter Coffee Powder',
+  content_category: 'Coffee',
+  content_type: 'product',
+  currency: 'INR',
+  value: 370.00,
+  ...nivoraBasePixelData
+};
+
+/* ==========================================================
+   PAGEVIEW
+========================================================== */
+const pageViewEventId = generateMetaEventId('PageView');
+
+fbq(
+  'track',
+  'PageView',
+  nivoraBasePixelData,
+  {
+    eventID: pageViewEventId
+  }
+);
+
+/* ==========================================================
+   VIEWCONTENT (fires after 4 seconds)
+========================================================== */
+setTimeout(() => {
+  console.log("View Content Event Triggered Now");
+
+  window.viewContentEventId = generateMetaEventId('ViewContent');
+
+  fbq(
+    'track',
+    'ViewContent',
+    nivoraProductPixelData,
+    {
+      eventID: window.viewContentEventId
     }
+  );
+}, 4000);
+</script>
 
-    const nivoraUtmParams = getNivoraUtmParams();
-    const nivoraBasePixelData = {
-      page_url: window.location.href,
-      page_title: document.title,
-      ...nivoraUtmParams
-    };
-
-    const nivoraProductPixelData = {
-      content_ids: ['B0GRHKL9YG'],
-      content_name: 'Nivora Coffee Company Filter Coffee Powder',
-      content_category: 'Coffee',
-      content_type: 'product',
-      currency: 'INR',
-      value: 370.00,
-      ...nivoraBasePixelData
-    };
-
-    // Fire PageView when page loads
-    fbq('track', 'PageView', nivoraBasePixelData);
-
-    // Fire ViewContent after 3 seconds on this product page
-    setTimeout(() => {
-      console.log("View Content Event Triggered Now")
-      fbq('track', 'ViewContent', nivoraProductPixelData);
-    }, 4000);
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=803752739244989&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=803752739244989&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
   <!-- ============================================================ -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -1594,32 +1633,44 @@
 
     window.addEventListener('scroll', onScroll, { passive: true });
 
-    // ============================================================
     // META PIXEL — Buy on Amazon click handler
-    // Fires InitiateCheckout THEN redirects
-    // ============================================================
-    function handleBuyClick(e) {
-      e.preventDefault();
-      const href = e.currentTarget.href;
+// Fires InitiateCheckout THEN redirects
+// ============================================================
+function handleBuyClick(e) {
+  e.preventDefault();
+  const href = e.currentTarget.href;
 
-      // Fire Meta Pixel Event
-      if (typeof fbq !== 'undefined') {
-        const checkoutPixelData = {
-          ...nivoraProductPixelData,
-          button_id: e.currentTarget.id || 'amazon_cta',
-          destination: 'Amazon'
-        };
+  // Fire Meta Pixel Event
+  if (typeof fbq !== 'undefined') {
+    const checkoutPixelData = {
+      ...nivoraProductPixelData,
+      button_id: e.currentTarget.id || 'amazon_cta',
+      destination: 'Amazon'
+    };
 
-        fbq('track', 'InitiateCheckout', checkoutPixelData);
-        console.log('%c🔥 Meta Pixel: InitiateCheckout fired (₹370)', 'color:#8B5F3B; font-weight:bold');
+    const initiateCheckoutEventId =
+      generateMetaEventId('InitiateCheckout');
+
+    fbq(
+      'track',
+      'InitiateCheckout',
+      checkoutPixelData,
+      {
+        eventID: initiateCheckoutEventId
       }
+    );
 
-      // Small delay to let pixel fire
-      setTimeout(() => {
-        window.location.href = href;
-      }, 300);
-    }
+    console.log(
+      '%c🔥 Meta Pixel: InitiateCheckout fired (₹370)',
+      'color:#8B5F3B; font-weight:bold'
+    );
+  }
 
+  // Small delay to let pixel fire
+  setTimeout(() => {
+    window.location.href = href;
+  }, 300);
+}
     // ============================================================
     // LIGHTBOX
     // ============================================================
